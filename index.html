@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renos Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .games-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .game-card {
+      background: #444;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      color: white;
+    }
+    .game-card:hover {
+      background: #666;
+    }
+    .game-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Renos Games</h1>
+
+  <div class="games-list">
+    <a class="game-card" href="games/game1.html">
+      <img src="games/images.png" alt="Renos Games" />
+      <h3>Ateş Ve Su: Orman Tapınağı</h3>
+    </a>
+    <a class="game-card" href="games/game2.html">
+      <img src="games/oyun2.png" alt="Renos Games" />
+      <h3>Time Shooter 3:SWAT</h3>
+    </a>
+  </div>
+
+</body>
+</html>

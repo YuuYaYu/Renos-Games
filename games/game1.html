@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ateş Ve Su: Orman Tapınağı</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    iframe {
+      border: none;
+      width: 1000px;
+      height: 600px;
+      background: #000;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ateş Ve Su: Orman Tapınağı</h1>
+
+  <!-- Oyun iframe-də -->
+  <iframe id="gameFrame" src="https://amhooman.github.io/fireboywatergirl/game.html" allowfullscreen></iframe>
+
+  <!-- Tam Ekran düyməsi -->
+  <button onclick="toggleFullscreen()">Tam Ekran</button>
+
+  <script>
+    function toggleFullscreen() {
+      const iframe = document.getElementById('gameFrame');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen(); // Safari üçün
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen(); // IE11 üçün
+      }
+    }
+  </script>
+
+</body>
+</html>

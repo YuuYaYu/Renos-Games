@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <title>Time Shooter 3: SWAT</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    iframe {
+      border: none;
+      width: 1000px;
+      height: 600px;
+      background: #000;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Time Shooter 3: SWAT</h2>
+
+  <!-- Oyun iframe-də -->
+  <iframe id="gameFrame" src="https://laparda14.github.io/Time-Shooter-3-SWAT/" allowfullscreen></iframe>
+
+  <!-- Tam ekran düyməsi -->
+  <button onclick="toggleFullscreen()">Tam Ekran</button>
+
+  <script>
+    function toggleFullscreen() {
+      const iframe = document.getElementById('gameFrame');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen(); // Safari üçün
+      }
+    }
+  </script>
+
+</body>
+</html>
