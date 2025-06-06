@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renos Games</title>
+
+  <!-- Favicon (qanlı alov şəklini istifadə etmək üçün yolunu düzgün göstərin) -->
+  <link rel="icon" type="image/png" href="images/renos-favicon.png" sizes="32x32" />
+  <link rel="shortcut icon" type="image/png" href="images/renos-favicon.png" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #000;
+      text-align: center;
+      background: url('images/light-red-blurred-background-vector.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .logo {
+      position: fixed;
+      top: 11px;
+      left: 11px;
+      height: 100px; /* əvvəl 70px idi, indi böyüdü */
+      z-index: 1000;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 120px; /* Loqo daha böyük olduğu üçün boşluq artırıldı */
+    }
+
+    .game-item {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .game-item:hover {
+      transform: scale(1.03);
+    }
+
+    .game-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .game-item a {
+      display: block;
+      padding: 12px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .game-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sabit loqo (böyüdülmüş versiya) -->
+  <img src="images/renosgames.png" alt="Renos Games Logo" class="logo" />
+
+  <!-- Oyun kartları -->
+  <div class="game-grid">
+    <div class="game-item">
+      <a href="games/game1.html">
+        <img src="images/fbawg1.png" alt="Ateş ve Su"> Ateş ve Su
+      </a>
+    </div>
+    <div class="game-item">
+      <a href="games/game2.html">
+        <img src="images/Stickman Hero Skibidi Tower Defense-512x384.jpg" alt="Stickman Hero Skibidi Tower Defense">
+        Stickman Hero Skibidi Tower Defense
+      </a>
+    </div>
+    <div class="game-item">
+      <a href="games/game3.html">
+        <img src="images/Among_Us.png" alt="Among Us Online"> Among Us Online
+      </a>
+    </div>
+    <div class="game-item">
+      <a href="games/game4.html">
+        <img src="images/ChatGPT Image Jun 5, 2025, 12_07_14 PM.png" alt="Toon Cup"> Toon Cup
+      </a>
+    </div>
+    <div class="game-item">
+      <a href="games/game5.html">
+        <img src="images/thumb300_Money300.jpg" alt="Money Movers 1"> Money Movers 1
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
