@@ -21,9 +21,9 @@
 
     .main-container {
       display: flex;
-      justify-content: flex-start; /* sola yaxınlaşdırıldı */
+      justify-content: flex-start; /* sola hizalama */
       align-items: flex-start;
-      gap: 20px;
+      gap: 40px; /* oyun ilə düymələr arasında boşluq */
       margin: 40px;
       flex-wrap: wrap;
     }
@@ -54,6 +54,7 @@
       text-decoration: none;
       text-align: center;
       transition: background 0.3s;
+      min-width: 120px;
     }
 
     .btn:hover {
@@ -61,19 +62,20 @@
     }
 
     @media (max-width: 900px) {
-      iframe {
-        width: 90vw;
-        height: 60vh;
-      }
-
       .main-container {
         flex-direction: column;
         align-items: center;
       }
 
+      iframe {
+        width: 90vw;
+        height: 60vh;
+      }
+
       .button-panel {
         flex-direction: row;
-        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
       }
     }
   </style>
@@ -83,8 +85,10 @@
   <h1>Ateş Ve Su: Orman Tapınağı</h1>
 
   <div class="main-container">
+    <!-- Oyun -->
     <iframe id="gameFrame" src="https://amhooman.github.io/fireboywatergirl/game.html" allowfullscreen></iframe>
 
+    <!-- Düymələr -->
     <div class="button-panel">
       <button class="btn" onclick="toggleFullscreen()">⛶ Tam Ekran</button>
       <a class="btn" href="../index.html">← Geri</a>
@@ -93,13 +97,15 @@
 
   <script>
     function toggleFullscreen() {
-      const iframe = document.getElementById('gameFrame');
+      const iframe = document.getElementById("gameFrame");
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
       } else if (iframe.webkitRequestFullscreen) {
         iframe.webkitRequestFullscreen();
       } else if (iframe.msRequestFullscreen) {
         iframe.msRequestFullscreen();
+      } else {
+        alert("Brauzer tam ekran rejimini dəstəkləmir.");
       }
     }
   </script>
