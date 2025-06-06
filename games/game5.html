@@ -2,15 +2,16 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stickman Hero Skibidi Tower Defense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Money Movers 1</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
       background: url("../images/light-red-blurred-background-vector.jpg") no-repeat center center fixed;
       background-size: cover;
       color: white;
+      font-family: Arial, sans-serif;
     }
 
     h1 {
@@ -30,7 +31,7 @@
 
     iframe {
       width: 800px;
-      height: 480px;
+      height: 600px;
       border: none;
       border-radius: 12px;
       background: #000;
@@ -80,24 +81,22 @@
 </head>
 <body>
 
-  <h1>Stickman Hero Skibidi Tower Defense</h1>
+  <h1>Money Movers 1</h1>
 
   <div class="main-container">
-    <iframe
-      id="gameFrame"
-      src="https://html5.gamemonetize.co/2684x8cvwav4br4ro0g9la54rqdsgt7b/"
-      allowfullscreen
-    ></iframe>
+    <!-- Oyun iframe-i -->
+   <iframe id="gameFrame" src="https://html5.gamedistribution.com/c035e676ef654227b1537dabbf194e00/" width="800" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
+    <!-- Butonlar -->
     <div class="button-panel">
-      <button class="btn" onclick="toggleFullscreen()">⛶ Tam Ekran</button>
+      <button class="btn" onclick="goFullscreen()">⛶ Tam Ekran</button>
       <a class="btn" href="../index.html">← Geri</a>
     </div>
   </div>
 
   <script>
-    function toggleFullscreen() {
-      const iframe = document.getElementById('gameFrame');
+    function goFullscreen() {
+      const iframe = document.getElementById("gameFrame");
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
       } else if (iframe.webkitRequestFullscreen) {

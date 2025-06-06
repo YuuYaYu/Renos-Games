@@ -2,15 +2,16 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stickman Hero Skibidi Tower Defense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toon Cup</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
       background: url("../images/light-red-blurred-background-vector.jpg") no-repeat center center fixed;
       background-size: cover;
       color: white;
+      font-family: Arial, sans-serif;
     }
 
     h1 {
@@ -80,24 +81,20 @@
 </head>
 <body>
 
-  <h1>Stickman Hero Skibidi Tower Defense</h1>
+  <h1>Toon Cup</h1>
 
   <div class="main-container">
-    <iframe
-      id="gameFrame"
-      src="https://html5.gamemonetize.co/2684x8cvwav4br4ro0g9la54rqdsgt7b/"
-      allowfullscreen
-    ></iframe>
+    <iframe id="gameFrame" src="https://www.jopi.com/embed.php?game=toon-cup" allowfullscreen></iframe>
 
     <div class="button-panel">
-      <button class="btn" onclick="toggleFullscreen()">⛶ Tam Ekran</button>
+      <button class="btn" onclick="goFullscreen()">⛶ Tam Ekran</button>
       <a class="btn" href="../index.html">← Geri</a>
     </div>
   </div>
 
   <script>
-    function toggleFullscreen() {
-      const iframe = document.getElementById('gameFrame');
+    function goFullscreen() {
+      const iframe = document.getElementById("gameFrame");
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
       } else if (iframe.webkitRequestFullscreen) {
