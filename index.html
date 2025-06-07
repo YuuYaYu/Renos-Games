@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Renos Games</title>
+  <title>Renos Games - Pulsuz Online Oyunlar Platforması</title>
 
-  <!-- Favicon (qanlı alov şəklini istifadə etmək üçün yolunu düzgün göstərin) -->
+  <!-- SEO üçün Meta Tags -->
+  <meta name="description" content="Renos Games - Ən maraqlı pulsuz oyunlar platforması. Ateş ve Su, Stickman Hero, Among Us və daha çox məşhur oyunları oynayın.">
+  <meta name="keywords" content="renos games, oyun, pulsuz oyunlar, ateş ve su, stickman hero, among us, toon cup, money movers, oyun platforması">
+  <meta name="author" content="Renos Games">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/renos-favicon.png" sizes="32x32" />
+  <link rel="shortcut icon" type="image/png" href="images/renos-favicon.png" />
 
   <style>
     body {
@@ -23,7 +30,7 @@
       position: fixed;
       top: 11px;
       left: 11px;
-      height: 100px; /* əvvəl 70px idi, indi böyüdü */
+      height: 100px;
       z-index: 1000;
     }
 
@@ -34,7 +41,7 @@
       padding: 20px;
       max-width: 1200px;
       margin: 0 auto;
-      margin-top: 120px; /* Loqo daha böyük olduğu üçün boşluq artırıldı */
+      margin-top: 120px;
     }
 
     .game-item {
@@ -45,7 +52,9 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .game-item:hover { transform: scale(1.03); }
+    .game-item:hover {
+      transform: scale(1.03);
+    }
 
     .game-item img {
       width: 100%;
@@ -64,12 +73,14 @@
       font-size: 18px;
     }
 
-    .game-item a:hover { text-decoration: underline; }
+    .game-item a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Sabit loqo (böyüdülmüş versiya) -->
+  <!-- Sabit loqo -->
   <img src="images/renosgames.png" alt="Renos Games Logo" class="logo" />
 
   <!-- Oyun kartları -->
@@ -81,7 +92,7 @@
     </div>
     <div class="game-item">
       <a href="games/game2.html">
-        <img src="images/sh.jpeg" alt="Stickman Hook">
+        <img src="images/Stickman Hero Skibidi Tower Defense-512x384.jpg" alt="Stickman Hook">
         Stickman Hook
       </a>
     </div>
@@ -101,5 +112,6 @@
       </a>
     </div>
   </div>
+
 </body>
 </html>
